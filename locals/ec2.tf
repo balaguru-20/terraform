@@ -8,7 +8,7 @@ resource "aws_instance" "this" {
     # expense-dev-backend
     #Name    = "terraform_demo"
     # Name    =  var.name  #throws an error can't work
-    Name  = local.name
+    Name    = local.name
     purpose = "terraform_practice"
   }
 }

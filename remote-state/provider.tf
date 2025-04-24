@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "balu-tf-remote-state"
-    key = "expense-backend-infra" #you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
-    region = "us-east-1"
-    dynamodb_table = "tf-state-locking" 
+    bucket         = "balu-tf-remote-state"
+    key            = "expense-backend-infra" #you should have unique keys with in the bucket, same key should not be used in other repos or tf projects
+    region         = "us-east-1"
+    dynamodb_table = "tf-state-locking"
   }
 }
 
