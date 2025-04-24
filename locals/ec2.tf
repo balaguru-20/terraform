@@ -1,13 +1,13 @@
 resource "aws_instance" "this" {
   ami                    = local.ami_id
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  # instance_type          = "t3.micro" # it is can be overriden
-  # instance_type          = var.instance_type # it is can be overriden
+  #instance_type          = "t3.micro" # it is can be overriden
+  #instance_type          = var.instance_type # it is can be overriden
   instance_type = local.instance_type # it is can't overriden
   tags = {
-    # expense-dev-backend
+    #expense-dev-backend
     #Name    = "terraform_demo"
-    # Name    =  var.name  #throws an error can't work
+    #Name    =  var.name  #throws an error can't work
     Name    = local.name
     purpose = "terraform_practice"
   }
