@@ -4,7 +4,7 @@ resource "aws_instance" "this" {
   instance_type          = "t3.micro"
   tags = {
     Name    = "terraform_demo"
-    purpose = "terrsform_practice"
+    purpose = "terraform_practice"
   }
 
 }
