@@ -6,7 +6,6 @@ resource "aws_instance" "this" {
     Name    = "terraform_demo"
     purpose = "terraform_practice"
   }
-
 }
 
 resource "aws_security_group" "allow_tls" {

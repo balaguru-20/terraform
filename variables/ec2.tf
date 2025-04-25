@@ -3,7 +3,6 @@ resource "aws_instance" "this" {
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   instance_type          = var.instance_type
   tags                   = var.ec2_tags
-
 }
 
 resource "aws_security_group" "allow_tls" {
